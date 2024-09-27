@@ -8,4 +8,4 @@ i used
 - **HTML**
 - **CSS**
 
-All content belongs to Francesca Grassi.
+All content belongs to **Francesca Grassi**.
