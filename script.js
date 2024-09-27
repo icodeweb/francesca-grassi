@@ -15,6 +15,7 @@ function loadPage() {
 }
 loadPage()
 
+
 function generateContent(elemntId) {
     let containerElemnt = document.getElementById(`${elemntId}`)
     let sideHTML = ``
