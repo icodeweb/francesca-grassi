@@ -32,18 +32,44 @@ img {
 
 .textbox {
     position: absolute;
-    display: block;
-    text-align: left;
-    line-height: 20px;
-    padding-top: 30px;
-    padding-left: 30px;
+    top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    line-height: 1.5rem;
     font-weight: 300;
     font-size: 16.5px;
     width: 50%;
 }
 
+.contact,
+.instructions,
+.textbox p {
+    padding: 0px 2rem;
+}
+
 .contact {
-    display: block;
-    margin-bottom: 20px;
-    text-align: center;
+    margin: auto;
+    padding: 0px;
+}
+
+.arrow {
+    font-weight: bold;
+    font-size: 25px;
+    height: 100%;
+}
+
+.instructions {
+    display: flex;
+    gap: .8rem;
+}
+
+@media screen and (max-width: 768px) {
+    .textbox {
+        width: 100%;
+    }
+
+    .instructions {
+        display: none;
+    }
 }
