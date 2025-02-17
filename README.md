@@ -1,5 +1,7 @@
 # Portfolio Website with Responsive Image Gallery
 
+![screenshot](/assets/img/screenshot.png)
+
 A responsive image gallery where users can adjust the number of columns and switch between horizontal and vertical views.
 
 for visual artists, designers, and more.
@@ -23,10 +25,6 @@ Based on Francesca Grassi’s portfolio website, with additional new features.
 ## I Used:
 
 **HTML,CSS,JS.**
-
-## Screenshot:
-
-![screenshot](./img/screenshot.png)
 
 ## License:
 
