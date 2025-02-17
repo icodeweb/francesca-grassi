@@ -9,13 +9,13 @@ function display(images, columns) {
 
     for (let index = 1; index <= images; index++) {
         let image = document.createElement("img");
-        image.src = `/img/img${index}.jpg`; // default format => jpg 
+        image.src = `assets/img/img${index}.jpg`; // default format => jpg 
 
         image.onerror = function () {
-            image.src = `/img/img${index}.png`; //try png
+            image.src = `assets/img/img${index}.png`; //try png
 
             image.onerror = function () {
-                image.src = `/img/img${index}.gif`; //try gif
+                image.src = `assets/img/img${index}.gif`; //try gif
             };
         };
 
@@ -29,7 +29,7 @@ let images = 32;
 //number of images.
 let columns = 2;
 //number of columns.
-const mediaQuery = window.matchMedia("(max-width: 768px)");
+const mediaQuery = window.matchMedia("(max-width: 600px)");
 if (mediaQuery.matches) {
     columns = 1;
 }
