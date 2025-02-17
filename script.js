@@ -1,22 +1,28 @@
 let imagesCount = 32;
+//number of images.
+let columnsCount = 3;
+//number of columns.
 
-// set this to the number of images.
+for (let index = 1; index <= columnsCount; index++) {
+    let column = document.createElement("div")
+    column.classList.add("column")
+    column.id = index
+    document.querySelector(".container").appendChild(column)
+}
+
 for (let index = 1; index <= imagesCount; index++) {
     let image = document.createElement("img");
     image.src = `/img/img${index}.jpg`; // default format => jpg 
 
     image.onerror = function () {
-        image.src = `/img/img${index}.png`; //if not jpg try png
+        image.src = `/img/img${index}.png`; //try png
 
         image.onerror = function () {
-            image.src = `/img/img${index}.gif`; //if not jpg or png try gif
+            image.src = `/img/img${index}.gif`; //try gif
         };
     };
 
-    if (index <= imagesCount / columnsCount) {
-        document.getElementById("one").appendChild(image);
-    } else {
-        document.getElementById("two").appendChild(image);
-    }
-}
+    let containerID = Math.ceil(index / (imagesCount / columnsCount))
 
+    document.getElementById(containerID).appendChild(image);
+}
